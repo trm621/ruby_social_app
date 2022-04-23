@@ -56,8 +56,20 @@ Rails.application.configure do
   # Highlight code that triggered database queries in logs.
   config.active_record.verbose_query_logs = true
 
+  config.action_mailer.default_url_options = { host: "localhost:3000" } 
+
   # Suppress logger output for asset requests.
   config.assets.quiet = true
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    user_name:      ENV['t.maher621@gmail.com'],
+    password:       ENV['Gosnet-tidcec-byhte1'],
+    domain:         ENV['localhost:3000'],
+    address:       'smtp.gmail.com',
+    port:          '587',
+    authentication: :plain,
+    enable_starttls_auto: true
+  }
 
   # Raises error for missing translations.
   # config.i18n.raise_on_missing_translations = true

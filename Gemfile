@@ -21,6 +21,8 @@ gem "jbuilder"
 
 gem "tzinfo-data"
 
+gem 'bcrypt', '~> 3.1.7'
+
 gem "bootsnap", require: false
 
 group :development, :test do

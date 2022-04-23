@@ -62,8 +62,8 @@ Rails.application.configure do
   config.assets.quiet = true
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    user_name:      ENV['t.maher621@gmail.com'],
-    password:       ENV['Gosnet-tidcec-byhte1'],
+    user_name:      ENV['email'],
+    password:       ENV['password'],
     domain:         ENV['localhost:3000'],
     address:       'smtp.gmail.com',
     port:          '587',
